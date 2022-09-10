@@ -6,9 +6,11 @@
 /* betty style doc for function main goes there */
 
 /**
-  *This program checks for the last digit of a number
-  *and use that number to permform operations
-  */
+ * main - This program checks for the last digit of a number
+ * and use that number to permform operations
+ * Return: Print to screen the last digit of a number
+ * and it's result from the operation performed
+ */
 int main(void)
 {
 	int n;

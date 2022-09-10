@@ -17,12 +17,12 @@ int main(void)
 		letter++;
 	}
 
-	char letterCap = 'A';
+	char cap = 'A';
 
-	while (letterCap <= 'Z')
+	while (cap <= 'Z')
 	{
-		putchar(letterCap);
-		letterCap++;
+		putchar(cap);
+		cap++;
 	}
 
 	putchar('\n');

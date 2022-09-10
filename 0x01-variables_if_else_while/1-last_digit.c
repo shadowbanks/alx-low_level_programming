@@ -4,6 +4,11 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
+
+/**
+  *This program checks for the last digit of a number
+  *and use that number to permform operations
+  */
 int main(void)
 {
 	int n;

@@ -10,14 +10,13 @@
 int main(void)
 {
 	char letter = 'a';
+	int cap = 65;
 
 	while (letter <= 'z')
 	{
 		putchar(letter);
 		letter++;
 	}
-
-	int cap = 65;
 
 	while (cap <= 90)
 	{

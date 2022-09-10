@@ -17,7 +17,7 @@ int main(void)
 		letter++;
 	}
 
-	char cap = 'A';
+	int cap = 'A';
 
 	while (cap <= 'Z')
 	{

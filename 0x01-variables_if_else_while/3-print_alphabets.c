@@ -17,9 +17,9 @@ int main(void)
 		letter++;
 	}
 
-	int cap = 'A';
+	int cap = 65;
 
-	while (cap <= 'Z')
+	while (cap <= 90)
 	{
 		putchar(cap);
 		cap++;

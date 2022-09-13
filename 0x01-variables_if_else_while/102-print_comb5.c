@@ -15,7 +15,7 @@ int main(void)
 	while (fCount <= 57)
 	{
 		sCount = 48;
-		while (sCount < 57)
+		while (sCount <= 57)
 		{
 			tCount = 48;
 			while (tCount <= 57)

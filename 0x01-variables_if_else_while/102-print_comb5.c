@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+  *main - prints all possible combinations of two two-digit numbers
+  *range 0 to 99
+  *
+  *Return: 0
+  */
+
 int main(void)
 {
 	int fCount, sCount, tCount, lsCount, fSet, sSet;
@@ -39,4 +46,5 @@ int main(void)
 		fCount++;
 	}
 	putchar('\n');
+	return (0);
 }

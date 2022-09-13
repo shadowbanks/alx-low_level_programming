@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	int fCount = sCount = tCount = lsCount = 48;
-	int fSet, sSet;
+	int fCount, sCount, tCount, lsCount, fSet, sSet;
 
+	fCount = sCount = tCount = lsCount = 48;
 	while (fCount <= 57)
 	{
 		sCount = 48;

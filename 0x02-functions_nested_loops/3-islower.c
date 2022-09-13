@@ -10,6 +10,7 @@
 int _islower(int c)
 {
 	unsigned char letter = (unsigned char)c;
+
 	if (letter < 'a' || letter > 'z')
 	{
 		/*_putchar(letter);*/

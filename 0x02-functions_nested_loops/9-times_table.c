@@ -2,7 +2,7 @@
 #include "stdio.h"
 
 /**
- * times_tables - 9 times table
+ * times_table - 9 times table
  * @
  *
  */
@@ -42,6 +42,8 @@ void times_table(void)
 					{
 						_putchar(' ');
 						_putchar(sNum + '0');
+						j++;
+						continue;
 					}
 					else
 					{
@@ -63,6 +65,8 @@ void times_table(void)
 				{
 					_putchar(fNum + '0');
 					_putchar(sNum + '0');
+					j++;
+					continue;
 				}
 			}
 			_putchar(' ');

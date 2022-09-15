@@ -9,67 +9,29 @@
 
 void times_table(void)
 {
-	int fNum, sNum, i, j, total;
+	int i, j, total;
 
 	i = 0;
 	while (i <= 9)
 	{
-		j = 0;
+		_putchar('0');
+		j = 1;
 
 		while (j <= 9)
 		{
 			total = i * j;
-			fNum = total / 10;
-			sNum = total % 10;
-
-			if (j == 0)
+			_putchar(',');
+			_putchar(' ');
+			if (total <= 9)
 			{
-				_putchar('0');
-				_putchar(',');
-			}
-
-			else if (fNum == 0)
-			{
-				if (j != 9)
-				{
-					_putchar(' ');
-					_putchar(sNum + '0');
-					_putchar(',');
-				}
-				else
-				{
-					if (fNum == 0)
-					{
-						_putchar(' ');
-						_putchar(sNum + '0');
-						j++;
-						continue;
-					}
-					else
-					{
-						_putchar(fNum + '0');
-						_putchar(sNum + '0');
-						_putchar(',');
-					}
-				}
+				_putchar(' ');
+				_putchar(total + '0');
 			}
 			else
 			{
-				if (j != 9)
-				{
-					_putchar(fNum + '0');
-					_putchar(sNum + '0');
-					_putchar(',');
-				}
-				else
-				{
-					_putchar(fNum + '0');
-					_putchar(sNum + '0');
-					j++;
-					continue;
-				}
+				_putchar(total / 10 + '0');
+				_putchar(total % 10 + '0');
 			}
-			_putchar(' ');
 			j++;
 		}
 		_putchar('\n');

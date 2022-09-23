@@ -4,7 +4,7 @@
  * @s1: pointer to a string
  * @s2: pointer to a string
  *
- * Return: 0 if equal 
+ * Return: 0 if equal
  */
 
 int _strcmp(char *s1, char *s2)

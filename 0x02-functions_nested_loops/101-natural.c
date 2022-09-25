@@ -4,7 +4,7 @@
  *  main - sum multiples of 3 or 5
  */
 
-void main(void)
+int main(void)
 {
 	int i = 0;
 	int sum = 0;
@@ -16,4 +16,5 @@ void main(void)
 		i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }

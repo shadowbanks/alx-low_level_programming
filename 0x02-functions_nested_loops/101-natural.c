@@ -2,6 +2,8 @@
 
 /**
  *  main - sum multiples of 3 or 5
+ *
+ *  Return: 0
  */
 
 int main(void)

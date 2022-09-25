@@ -18,6 +18,8 @@ char *cap_string(char *a)
 	{
 		for (j = 0; j < 14; j++)
 		{
+			if (*(a + 0) >= 97 && *(a + 0) <= 122)
+				*(a + 0) = *(a + 0) - 32;
 			if (*(a + i) == *(marks + j))
 			{
 /*				printf("%c ", *(marks + j)); */

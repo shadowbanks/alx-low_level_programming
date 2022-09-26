@@ -10,7 +10,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int i, j;
 	int count = 0;
 	int total;
 
@@ -19,9 +19,9 @@ char *_strncat(char *dest, char *src, int n)
 		count++;
 	}
 
-	for (i = 0; i < n; i++)
+	for (j = 0; *(src +j) != '\0' && j < n; j++)
 	{
-		*(dest + count + i) = *(src + i);
+		*(dest + count + j) = *(src + j);
 	}
 
 	total = count + n;

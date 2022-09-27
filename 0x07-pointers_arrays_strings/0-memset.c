@@ -16,12 +16,10 @@ char *_memset(char *s, char b, unsigned int n)
  *	printf("%p\n\n\n", p);
  *	printf("%c\n\n", *p);
  */
-	while (n + 1)
+	while (n--)
 	{
 		*p = (unsigned char) b;
 		p++;
-		n--;
 	}
-	*p = '\0';
 	return (s);
 }

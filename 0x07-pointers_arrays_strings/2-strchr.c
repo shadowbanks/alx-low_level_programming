@@ -11,12 +11,22 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+	int count = 0;
+	int j = 0;
 
-	while (*(s + i) != '\0')
+	char *p = s;
+
+	while (*(p + i) != '\0')
 	{
-		if (*(s + i) == c)
-			return (s + i);
+		count++;
 		i++;
+	}
+
+	while (j <= count)
+	{
+		if (*(p + j) == c)
+			return (s + j);
+		j++;
 	}
 	return ('\0');
 }

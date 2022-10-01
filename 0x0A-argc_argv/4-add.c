@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
   * main - print file name
@@ -11,32 +13,33 @@
 
 int main(int argc, __attribute__((unused)) char **argv)
 {
-	int i = 0, total = 0, checker;
+	int i = 1, total = 0;
+	unsigned int j;
+	char a;
 
 	if (argc == 1)
 		printf("0\n");
-
 	else
 	{
-		while (argc--)
+		while (i < argc)
 		{
-			if (atoi(argv[i]) == 0)
+			for (j = 0; j < strlen(argv[i]); j++)
 			{
-				checker = 0;
+				a = argv[i][j];
+				if (a <= '9' && a >= '0')
+				{
+					total += atoi(argv[i]);
+
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else if (atoi(argv[i]) >= 0)
-				total += atoi(argv[i]);
 			i++;
 		}
-		if (checker == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			printf("%d\n", total);
-		}
+		printf("%d\n", total);
 	}
 	return (0);
 }

@@ -13,7 +13,7 @@
 
 int main(int argc, __attribute__((unused)) char **argv)
 {
-	int i = 1, total = 0;
+	int i = 1, total = 0, count = 0;
 	unsigned int j;
 	char a;
 
@@ -28,8 +28,7 @@ int main(int argc, __attribute__((unused)) char **argv)
 				a = argv[i][j];
 				if (a <= '9' && a >= '0')
 				{
-					total += atoi(argv[i]);
-
+					count++;
 				}
 				else
 				{
@@ -37,6 +36,7 @@ int main(int argc, __attribute__((unused)) char **argv)
 					return (1);
 				}
 			}
+			total += atoi(argv[i]);
 			i++;
 		}
 		printf("%d\n", total);

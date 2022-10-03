@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * cent - calculate the number of coins needed
+  * cents - calculate the number of coins needed
   * @cent: amout of money
   *
   * Return: nothing

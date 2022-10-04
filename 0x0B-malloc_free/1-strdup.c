@@ -27,7 +27,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	a = malloc(sizeof(char) * count);
+	a = malloc((sizeof(char) * count) + 1);
 
 	while (j < count)
 	{

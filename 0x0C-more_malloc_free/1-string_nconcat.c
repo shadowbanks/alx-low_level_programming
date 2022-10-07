@@ -32,11 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	s = malloc((sizeof(*s) * (fLen + sLen)) + 1);
 
-	while (1)
-	{
-		if (s == NULL)
-			return (NULL);
-	}
+	if (s == NULL)
+		return (NULL);
 	s = strcat(s, fS);
 	s = strncat(s, sS, sLen);
 

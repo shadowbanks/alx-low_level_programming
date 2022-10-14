@@ -19,6 +19,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	if (*separator == '\0')
 		return;
 
+	if (separator == NULL)
+		return;
+	if (n == 0)
+		return;
+
 	va_start(ap, n);
 
 	while (i < n)

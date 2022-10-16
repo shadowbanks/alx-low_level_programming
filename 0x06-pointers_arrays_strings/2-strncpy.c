@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strncpy - string copy
  * @dest: pointer to a string
@@ -10,20 +11,20 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *sr, *de;
 	int i;
-	int count = 0;
 
-	for (i = 0; i < n; i++)
+	sr = src;
+	de = dest;
+
+	for (i = 0; (src[i] != '\0') && i < n; i++)
 	{
-		if (*(src + i) == ' ')
-			*(dest + i) = '\0';
-
-		*(dest + i) = *(src + i);
-		count++;
+		de[i] = sr[i];
+	}
+	for(; i < n; i++)
+	{
+		de[i] = '\0';
 	}
 
-/*
-	*(dest + count) = '\0';
-*/
-	return (dest);
+	return (de);
 }

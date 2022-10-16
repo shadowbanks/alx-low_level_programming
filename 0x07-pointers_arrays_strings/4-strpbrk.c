@@ -15,25 +15,23 @@ char *_strpbrk(char *s, char *accept)
 	i = 0;
 	j = 0;
 
-	while (*(s + i) != '\0')
+
+	while (s[i] != '\0')
 	{
 		j = 0;
-		while (*(accept + j) != '\0')
+		while (accept[j] != '\0')
 		{
 
-			if ((*(s + i) >= 'a' && *(s + i) <= 'z') ||
+			if ((s[i] >= 'a' && s[i] <= 'z') ||
 					(*(s + i) >= 'A' && *(s + i) <= 'Z'))
 			{
-				if (*(s + i) == *(accept + j))
+				if (s[i] == accept[j])
 					return (s + i);
 			}
-			else
-				return ('\0');
-
 			j++;
 		}
 		i++;
 	}
-	return (s + i);
+	return ('\0');
 }
 

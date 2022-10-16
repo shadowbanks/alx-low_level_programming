@@ -10,31 +10,31 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, hayCount, neeCount;
+	int i, j, hayCount, nCount;
 
 	char *pHay = haystack;
 	char *pNee = needle;
 
 	j = 0;
 	hayCount = 0;
-	neeCount = 0;
+	nCount = 0;
 
 	for (i = 0; *(pHay + i) != '\0'; i++)
 		hayCount++;
 	for (i = 0; *(pNee + i) != '\0'; i++)
-		neeCount++;
+		nCount++;
+
+	if (nCount == 0)
+		return (pHay);
 
 	i = 0;
 	while (i <= hayCount)
 	{
 		j = 0;
-		while (j <= neeCount)
+		while (j <= nCount)
 		{
-			if (*(pHay + i) == *(pNee + j))
-			{
-				if (*(pHay + i + neeCount) == *(pNee + neeCount))
-					return (haystack + i);
-			}
+			if ((pHay[i] == pNee[j]) && (pHay[i + nCount - 1] == pNee[j + nCount - 1]))
+				return (pHay + i);
 			j++;
 		}
 		i++;

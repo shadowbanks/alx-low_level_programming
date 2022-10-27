@@ -22,10 +22,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	while (ptr->next != NULL)
 	{
 		count++;
-		printf("%d\t", count);
 		ptr = ptr->next;
 		i--;
-		printf("%d\n", i);
 	}
 
 	if (count != index)

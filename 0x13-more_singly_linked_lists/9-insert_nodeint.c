@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 
+listint_t *loop(listint_t *ptr, unsigned int idx);
+
 /**
   * insert_nodeint_at_index - Add a node to a particular index
   * of a linked list
@@ -14,7 +16,7 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int i = idx;
+/*	unsigned int i = 1;*/
 	listint_t *ptr, *temp, *ptr2;
 
 	/*create a new node*/
@@ -37,14 +39,46 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	ptr = NULL;
 	ptr = *head;
 
-	while (i > 1)
+	if (idx == 0)
 	{
-		ptr = ptr->next;
-		i--;
+		ptr2 = ptr;
+		ptr = temp;
+		temp->next = ptr2;
+		*head = ptr;
+		return (temp);
 	}
+
+	 ptr = loop(ptr, idx);
+
+	if (ptr == NULL)
+		return (NULL);
 
 	ptr2 = ptr->next;
 	ptr->next = temp;
 	temp->next = ptr2;
-	return (temp);
+return (temp);
+}
+
+/**
+  * loop - move pointer to a particular node index
+  * @head: pointer to list
+  * @idx: node idx
+  *
+  * Return: new pointer
+  */
+
+listint_t *loop(listint_t *head, unsigned int idx)
+{
+	listint_t *ptr = head;
+
+	unsigned int i = 1;
+
+	while (i < idx)
+	{
+		if (ptr == NULL)
+			return (NULL);
+		ptr = ptr->next;
+		i++;
+	}
+return (ptr);
 }

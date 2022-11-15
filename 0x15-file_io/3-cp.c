@@ -91,7 +91,7 @@ int close_file(int fd, char fdChar)
 
 int main(int ac, char **av)
 {
-	int fd, fd2, fdTemp, closeF, rd, chk;
+	int fd, fd2, fdTemp, closeF, rd;
 	char fdChar, fd2Char;
 	char *ch;
 

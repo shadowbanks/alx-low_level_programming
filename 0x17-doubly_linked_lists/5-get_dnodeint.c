@@ -12,7 +12,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	nodePtr temp;
-	unsigned int count = 0, i = 0;
+	unsigned int count = 0;
 
 	if (head == NULL)
 		return (NULL);
@@ -21,19 +21,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	while (temp->next != NULL)
 	{
+		if (count == index)
+			return (temp);
 		count++;
 		temp = temp->next;
 	}
 
-	if (index >= count)
-		return (NULL);
-
-	temp = head;
-
-	while (i < index)
-	{
-		i++;
-		temp = temp->next;
-	}
-	return (temp);
+	return (NULL);
 }

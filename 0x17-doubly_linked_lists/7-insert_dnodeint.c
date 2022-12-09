@@ -1,41 +1,49 @@
 #include "lists.h"
 
 /**
-  * get_dnodeint_at_index - check for a particular node in a dlinked list
-  * @head: pointer to the list
-  * @index: node index
+  * insert_dnodeint_at_index - insert a new node at specific index
+  * @h: head of the list
+  * @idx: index for the node to be inserted
+  * @n: data for the new node
   *
-  * Return: pointer to node
+  * Return: Pointer to the new node or NULL on failure
   */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	nodePtr temp, new_node;
-	unsigned int i;
+	nodePtr new_node, temp;
+	unsigned int i = 0;
 
-	new_node = NULL;
+	if (h == NULL)
+		return (NULL);
+	if (idx == 0)
+		return (add_dnodeint(h, idx));
 
 	new_node = malloc(sizeof(dlistint_t));
+
 	if (new_node == NULL)
 		return (NULL);
 
 	new_node->n = n;
-	if (*h == NULL)
-		return (NULL);
+	new_node->next = NULL;
+	new_node->prev = NULL;
 
 	temp = *h;
 
-	for (i = 0; i <= idx; i++)
+	while (temp != NULL)
 	{
+		if (i == idx - 1)
+		{
+			new_node->next = temp->next;
+			new_node->prev = temp;
+			temp->next = new_node;
+			if (new_node->next != NULL)
+				new_node->next->prev = new_node;
+			return (new_node);
+		}
 		temp = temp->next;
-		if (temp == NULL)
-			return (NULL);
+		i++;
 	}
-	new_node->prev = temp;
-	new_node->next = temp->next;
-	temp = new_node;
-	temp->next->prev = new_node;
 
-
-	return (new_node);
+	return (NULL);
 }

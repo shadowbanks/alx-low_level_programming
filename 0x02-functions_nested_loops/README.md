@@ -18,3 +18,6 @@ Functions, nested loops
 7-print_last_digit -- Prints the last digit of a number
 
 
+8-24_hours -- Print every minute of the day
+
+

@@ -15,3 +15,6 @@ Functions, nested loops
 6-abs -- Compute the absolute value of an integer
 
 
+7-print_last_digit -- Prints the last digit of a number
+
+

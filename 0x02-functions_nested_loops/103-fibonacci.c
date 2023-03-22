@@ -8,20 +8,19 @@
 
 int main(void)
 {
-	int temp, old = 2, fib = 1, sum = 0;
+	long int temp, old = 1, fib = 1, sum = 0;
 
 	while (1)
 	{
-		if (fib >= 4000000)
-			break;
-		/*printf("%d, ", fib);*/
-		if (fib % 2 == 0)
-			sum += fib;
 		temp = fib;
 		fib += old;
 		old = temp;
+		if (fib >= 4000000)
+			break;
+		if (fib % 2 == 0)
+			sum += fib;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 
 	return (0);
 }

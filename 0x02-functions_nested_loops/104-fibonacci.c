@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print the first 50 fibonacci numbers
+ * main - Print the first 98 fibonacci numbers
  *
  * Return: 0 qon Success
  */
@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	long int temp, old = 1, fib = 1;
 
-	for (i = 0; i < 49; i++)
+	for (i = 0; i < 97; i++)
 	{
 		printf("%ld, ", fib);
 		temp = fib;

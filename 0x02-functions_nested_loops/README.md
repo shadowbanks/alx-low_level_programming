@@ -11,19 +11,15 @@ Functions, nested loops
 
 5-sign.c -- Print the sign of a number
 
-
 6-abs -- Compute the absolute value of an integer
-
 
 7-print_last_digit -- Prints the last digit of a number
 
-
 8-24_hours -- Print every minute of the day
-
 
 9-times_table.c -- Print 9 times table
 
-
 10-add -- Add two integers
 
+11-print_to_98 -- Print all natural numbers from n to 98
 

@@ -23,3 +23,6 @@ Functions, nested loops
 
 11-print_to_98 -- Print all natural numbers from n to 98
 
+100-times_table.c -- Print n times table, if n > 15 or n < 0 it'll print nothing
+
+

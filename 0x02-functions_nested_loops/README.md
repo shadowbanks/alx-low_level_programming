@@ -21,3 +21,9 @@ Functions, nested loops
 8-24_hours -- Print every minute of the day
 
 
+9-times_table.c -- Print 9 times table
+
+
+10-add -- Add two integers
+
+

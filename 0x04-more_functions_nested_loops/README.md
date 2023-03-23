@@ -22,3 +22,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 5-more_numbers.c -- Print 0 to 14, 10 times
 
 
+6-print_line -- Draw a straight line based on the n value given
+
+

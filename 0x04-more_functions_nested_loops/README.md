@@ -10,3 +10,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 1-isdigit.c -- Check if a digit
 
 
+2-mul -- Calculate the product of two integers
+
+

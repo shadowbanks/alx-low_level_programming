@@ -13,3 +13,9 @@ MORE FUNCTION, MORE NESTED LOOPS
 2-mul -- Calculate the product of two integers
 
 
+4-print_most_numbers -- Print 0 - 9 excluding 2 & 4
+
+
+3-print_numbers -- Print 0 - 9
+
+

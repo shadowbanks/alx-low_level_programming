@@ -34,3 +34,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 9-fizz_buzz -- Fizz-Buzz test
 
 
+10-print_triangle -- Draw a triangle with a given size
+
+

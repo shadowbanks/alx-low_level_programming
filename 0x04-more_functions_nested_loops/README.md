@@ -28,3 +28,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 7-print_diagonal -- Print diagonal line, length based off n
 
 
+8-print_square -- Print a square made up of '#'
+
+

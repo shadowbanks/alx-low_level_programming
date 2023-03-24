@@ -2,6 +2,7 @@
 
 /**
  * print_line -- Print a line
+ * @n: line length
  *
  * Return: Nothing
  */
@@ -17,7 +18,7 @@ void print_line(int n)
 	}
 	for (i = 0; i < n; i++)
 	{
-			_putchar('_');
+		_putchar('_');
 	}
 	_putchar('\n');
 }

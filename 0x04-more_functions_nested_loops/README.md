@@ -31,3 +31,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 8-print_square -- Print a square made up of '#'
 
 
+9-fizz_buzz -- Fizz-Buzz test
+
+

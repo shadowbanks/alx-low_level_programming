@@ -25,3 +25,6 @@ MORE FUNCTION, MORE NESTED LOOPS
 6-print_line -- Draw a straight line based on the n value given
 
 
+7-print_diagonal -- Print diagonal line, length based off n
+
+

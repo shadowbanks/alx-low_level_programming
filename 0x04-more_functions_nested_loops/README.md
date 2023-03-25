@@ -19,3 +19,21 @@ MORE FUNCTION, MORE NESTED LOOPS
 3-print_numbers -- Print 0 - 9
 
 
+5-more_numbers.c -- Print 0 to 14, 10 times
+
+
+6-print_line -- Draw a straight line based on the n value given
+
+
+7-print_diagonal -- Print diagonal line, length based off n
+
+
+8-print_square -- Print a square made up of '#'
+
+
+9-fizz_buzz -- Fizz-Buzz test
+
+
+10-print_triangle -- Draw a triangle with a given size
+
+

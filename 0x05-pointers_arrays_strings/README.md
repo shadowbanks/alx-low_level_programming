@@ -10,3 +10,6 @@ Pointers, arrays and strings
 1-swap - swap the values of two int values using pointers
 
 
+3-puts - Print a string followed by a new line
+
+

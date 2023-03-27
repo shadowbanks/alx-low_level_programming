@@ -13,6 +13,9 @@ Pointers, arrays and strings
 3-puts - Print a string followed by a new line
 
 
-4-print_rev - Reverse a string
+4-print_rev - Print a string in reverse
+
+
+5-rev_string - Reverse a string
 
 

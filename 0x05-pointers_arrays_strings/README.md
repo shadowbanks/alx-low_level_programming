@@ -25,3 +25,6 @@ Pointers, arrays and strings
 7-puts_half - Print the second half of a string
 
 
+8-print_array.c - Print the n elements of an integer array
+
+

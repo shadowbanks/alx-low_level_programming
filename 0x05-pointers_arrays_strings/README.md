@@ -19,3 +19,6 @@ Pointers, arrays and strings
 5-rev_string - Reverse a string
 
 
+6-puts2 - Print every other character of a string
+
+

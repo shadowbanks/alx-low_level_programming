@@ -22,3 +22,6 @@ Pointers, arrays and strings
 6-puts2 - Print every other character of a string
 
 
+7-puts_half - Print the second half of a string
+
+

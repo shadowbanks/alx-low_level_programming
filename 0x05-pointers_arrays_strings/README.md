@@ -28,3 +28,6 @@ Pointers, arrays and strings
 8-print_array.c - Print the n elements of an integer array
 
 
+9-strcpy - make a copy of a string
+
+

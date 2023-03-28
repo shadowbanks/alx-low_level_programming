@@ -13,10 +13,16 @@ void puts_half(char *str)
 	int n = len;
 
 	if (len % 2 != 0)
-		n--;
-	n /= 2;
+	{
+		n = (len - 1) / 2;
+		write(1, (str + n + 1), n);
+	}
+	else
+	{
+		n /= 2;
+		write(1, (str + n), n);
+	}
 
-	write(1, (str + n), n);
 	_putchar('\n');
 }
 

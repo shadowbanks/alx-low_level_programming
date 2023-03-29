@@ -13,3 +13,6 @@ My Own version of some functions from the standard library
 1-strncat - Similar to _strcat but will use (n) bytes from the src
 
 
+2-strncpy - Copies a string
+
+

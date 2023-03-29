@@ -16,3 +16,6 @@ My Own version of some functions from the standard library
 2-strncpy - Copies a string
 
 
+3-strcmp - Compare two strings
+
+

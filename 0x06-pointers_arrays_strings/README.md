@@ -25,3 +25,6 @@ My Own version of some functions from the standard library
 5-string_toupper - Convert a string to uppercase
 
 
+6-cap_string - Capitalize all words of a string
+
+

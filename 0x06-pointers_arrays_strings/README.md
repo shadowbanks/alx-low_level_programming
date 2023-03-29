@@ -19,3 +19,6 @@ My Own version of some functions from the standard library
 3-strcmp - Compare two strings
 
 
+4-rev_array - Reverse an array
+
+

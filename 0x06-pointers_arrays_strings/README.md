@@ -22,3 +22,6 @@ My Own version of some functions from the standard library
 4-rev_array - Reverse an array
 
 
+5-string_toupper - Convert a string to uppercase
+
+

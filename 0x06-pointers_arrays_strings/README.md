@@ -31,3 +31,6 @@ My Own version of some functions from the standard library
 7-leet - Encode string into 1337
 
 
+100-rot13 - Encode string using rot13
+
+

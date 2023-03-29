@@ -19,7 +19,10 @@ char *leet(char *s)
 		while (j < 5)
 		{
 			if (s[i] == letters[j] || (s[i] + 32) == letters[j])
+			{
 				s[i] = code[j];
+				break;
+			}
 			j++;
 		}
 		i++;

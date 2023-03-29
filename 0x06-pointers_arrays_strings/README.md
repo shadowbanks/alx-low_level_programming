@@ -28,3 +28,6 @@ My Own version of some functions from the standard library
 6-cap_string - Capitalize all words of a string
 
 
+7-leet - Encode string into 1337
+
+

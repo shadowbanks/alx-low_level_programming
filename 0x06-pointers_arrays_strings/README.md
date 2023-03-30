@@ -37,3 +37,6 @@ My Own version of some functions from the standard library
 102-magic - Edit value in memory
 
 
+101-print_number - Print integer number to screen
+
+

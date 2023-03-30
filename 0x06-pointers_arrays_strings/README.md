@@ -34,3 +34,6 @@ My Own version of some functions from the standard library
 100-rot13 - Encode string using rot13
 
 
+102-magic - Edit value in memory
+
+

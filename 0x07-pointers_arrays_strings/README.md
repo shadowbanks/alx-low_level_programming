@@ -7,3 +7,6 @@ _memset() - The function fills the first "n" bytes of the memory area pointed to
 _memcpy() - This function copies "n" bytes from memory area "src" to memory area "dest". Run "man memcpy" for more info.
 
 
+_strchr() - Function finds the first occurrence of a character in a string. Run "man strchr" for more info
+
+

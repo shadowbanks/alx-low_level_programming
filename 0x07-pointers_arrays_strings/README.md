@@ -16,3 +16,6 @@ _strspn() - The function gets the length of a prefix substring. Run "man strspn"
 _strpbrk() - Function searches a string for any set of bytes and returns a pointer to the byte. Run "man strpbrk" for more info
 
 
+_strstr() - Search for a substring in a string. Run "man strstr" for more info
+
+

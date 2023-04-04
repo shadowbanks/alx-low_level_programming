@@ -12,15 +12,14 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0, j, len, lenHay;
+	int i = 0, j, len;
 	char *hay;
 
 	hay = haystack;
 	len = _strlen(needle) - 1;
-	lenHay = _strlen(haystack) - 1;
 
-	if (len == 0 || lenHay == 0)
-		return (NULL);
+	if (len <= 0)
+		return (haystack);
 
 	while (needle[i] != '\0')
 	{

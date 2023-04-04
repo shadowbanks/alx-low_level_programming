@@ -13,3 +13,6 @@ _strchr() - Function finds the first occurrence of a character in a string. Run 
 _strspn() - The function gets the length of a prefix substring. Run "man strspn" for more info
 
 
+_strpbrk() - Function searches a string for any set of bytes and returns a pointer to the byte. Run "man strpbrk" for more info
+
+

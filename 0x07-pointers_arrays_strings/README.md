@@ -1,5 +1,5 @@
 Even more pointers, arrays and strings
-
+====================================================
 
 _memset() - The function fills the first "n" bytes of the memory area pointed to by "s" with the constant byte "b". Run man memset for more info.
 
@@ -22,6 +22,7 @@ _strstr() - Search for a substring in a string. Run "man strstr" for more info
 print_chessboard() - Function prints a chess board
 
 
-print_diagsums() - Print the sum of diagonals
+print_diagsums() - Print the sum of diagonals of a matrix
 
 
+set_string() - The function sets the value of a pointer to char

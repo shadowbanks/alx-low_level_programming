@@ -22,3 +22,6 @@ _strstr() - Search for a substring in a string. Run "man strstr" for more info
 print_chessboard() - Function prints a chess board
 
 
+print_diagsums() - Print the sum of diagonals
+
+

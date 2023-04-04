@@ -19,3 +19,6 @@ _strpbrk() - Function searches a string for any set of bytes and returns a point
 _strstr() - Search for a substring in a string. Run "man strstr" for more info
 
 
+print_chessboard() - Function prints a chess board
+
+

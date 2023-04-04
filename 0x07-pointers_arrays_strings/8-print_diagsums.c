@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsum - print the sum of diagonals of a martix
+ * print_diagsums - print the sum of diagonals of a martix
  * @a: matrix
  * @size: matrix size
  *

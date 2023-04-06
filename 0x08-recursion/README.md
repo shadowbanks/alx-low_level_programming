@@ -16,3 +16,6 @@ _strlen_recursion() - Calculate the length of a string
 factorial() - Calculate the factorial of a number
 
 
+_pow_recursion() - Calculate a number to the power of a number
+
+

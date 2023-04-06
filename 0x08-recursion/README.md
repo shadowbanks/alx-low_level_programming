@@ -13,3 +13,6 @@ _print_rev_recursion() - Print reverse of a string using recursion
 _strlen_recursion() - Calculate the length of a string
 
 
+factorial() - Calculate the factorial of a number
+
+

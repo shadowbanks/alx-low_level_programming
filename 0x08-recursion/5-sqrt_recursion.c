@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _sqrt(int n, int x);
+int _sqrt(int n, long int x);
 /**
  * _sqrt_recursion - Find the square root of a number
  * @n: the number
@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  * Return: the square root or -1 if the square root
  * is not a natural number
  */
-int _sqrt(int n, int x)
+int _sqrt(int n, long int x)
 {
 	if (n < 0)
 		return (-1);

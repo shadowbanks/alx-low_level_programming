@@ -19,3 +19,6 @@ factorial() - Calculate the factorial of a number
 _pow_recursion() - Calculate a number to the power of a number
 
 
+_sqrt_recursion() - Calculate the square root of a number
+
+

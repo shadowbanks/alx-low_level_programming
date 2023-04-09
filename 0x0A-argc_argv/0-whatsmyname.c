@@ -2,8 +2,8 @@
 
 /**
  * main - Print file name
- * @argc - Argument counter
- * @argv - array
+ * @argc: Argument counter
+ * @argv: array
  *
  * Return: EXIT_SUCCESS
  */

@@ -26,3 +26,8 @@ libmy.a - A library containing the following functions:
 	unsigned int _strspn(char *s, char *accept);
 	char *_strpbrk(char *s, char *accept);
 	char *_strstr(char *haystack, char *needle);
+
+
+create_static_lib.sh - A script that creates a static library using all the .c file in the current directory
+
+

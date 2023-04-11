@@ -13,3 +13,6 @@ _strdup() - Make a copy of a string
 str_concat() - Concatenate two strings
 
 
+alloc_grid() - create a two dimentional array
+
+

@@ -16,3 +16,6 @@ str_concat() - Concatenate two strings
 alloc_grid() - create a two dimentional array
 
 
+free_grid() - Free 2D-array memory
+
+

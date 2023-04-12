@@ -13,7 +13,7 @@ int _strlen(char *s);
 
 char *argstostr(int ac, char **av)
 {
-	int i = 1, j, count = 0, temp = 0;
+	int i = 0, j, count = 0, temp = 0;
 	char *ptr;
 
 	if (ac == 0 || av == NULL)
@@ -25,12 +25,12 @@ char *argstostr(int ac, char **av)
 		i++;
 	}
 
-	ptr = malloc(sizeof(char) * (count + ac));
+	ptr = malloc(sizeof(char) * (count + ac) + 1);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	i = 1;
+	i = 0;
 
 	while (i < ac)
 	{

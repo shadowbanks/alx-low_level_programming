@@ -19,3 +19,6 @@ alloc_grid() - create a two dimentional array
 free_grid() - Free 2D-array memory
 
 
+argstostr() - Concatenate all arguments passed to the program
+
+

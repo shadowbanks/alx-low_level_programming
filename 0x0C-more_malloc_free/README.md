@@ -13,3 +13,6 @@ string_nconcat() - Concatenate two string (n) of the second string.
 _calloc() - Allocate memory for an array. Run "man calloc" for more INFO
 
 
+array_range() - Create an array of integer
+
+

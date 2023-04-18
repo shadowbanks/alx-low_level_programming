@@ -2,6 +2,10 @@
 
 /**
  * init_dog - Initialize a struct
+ * @d: Dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  *
  * Return: Nothing
  */

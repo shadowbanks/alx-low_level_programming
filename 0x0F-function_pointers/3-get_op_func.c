@@ -1,10 +1,8 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * get_op_func - select calculator operation
  * @s: operation name
- * @a: number
- * @b: number
  *
  * Return: Pointer to function
  */
@@ -25,9 +23,11 @@ int (*get_op_func(char *s))(int a, int b)
 
 	while (i < 5)
 	{
-		if (strcmp(ops[i]->op, s) == 0)
+		if (strcmp(ops[i].op, s) == 0)
+		{
 			break;
+		}
 		i++;
 	}
-		return (ops[i]->f(a, b));
+	return (ops[i].f);
 }

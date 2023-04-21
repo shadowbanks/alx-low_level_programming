@@ -14,10 +14,11 @@ void print_all(const char * const format, ...)
 	char *temp;
 
 	if (format == NULL)
+	{
+		putchar('\n');
 		return;
-
+	}
 	len = strlen(format);
-
 	va_start(ap, format);
 
 	while (i < len)

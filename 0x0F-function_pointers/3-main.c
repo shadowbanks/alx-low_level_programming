@@ -10,9 +10,8 @@
 
 int main(int ac, char **av)
 {
-	int a = atoi(av[1]);
-	int b = atoi(av[3]);
-	char *opr = av[2];
+	int a, b;
+	char *opr;
 	int result;
 
 	if (ac != 4)
@@ -20,6 +19,9 @@ int main(int ac, char **av)
 		printf("Error\n");
 		exit(98);
 	}
+	a = atoi(av[1]);
+	b = atoi(av[3]);
+	opr = av[2];
 
 	if ((strcmp(opr, "/") == 0 && b == 0) || (strcmp(opr, "%") == 0 && b == 0))
 	{

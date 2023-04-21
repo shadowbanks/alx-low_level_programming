@@ -13,3 +13,4 @@ print_numbers() - Print number using separator passed
 void print_strings() - Print string using specified separator
 
 
+print_all() - Print all data types

@@ -19,3 +19,6 @@ add_node() - Add a new node at the beginning of a linked list
 add_note_end() - Add a new node at the end of a linked list
 
 
+free_list() - Free a linked list
+
+

@@ -9,7 +9,7 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	nextPtr new_node = NULL, toFirst = NULL;
+	nextPtr new_node = NULL, temp = NULL;
 
 	if (head != NULL)
 	{
@@ -18,15 +18,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		if (new_node == NULL)
 			return (NULL);
 
-		if (*head != NULL)
-		{
-			toFirst = *head;
-
-			new_node->n = n;
-			new_node->next = toFirst;
-		}
+		temp = *head;
+		new_node->n = n;
+		new_node->next = temp;
 		*head = new_node;
-		return (new_node);
+
 	}
 	return (NULL);
 }

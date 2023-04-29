@@ -31,3 +31,6 @@ More Singly linked lists
 - get_nodeint_at_index() - Get the address of a node at a specific index
 
 
+- sum_listint() - Sum all the integer data in a linked list cotaining integer
+
+

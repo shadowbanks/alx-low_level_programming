@@ -22,3 +22,6 @@ More Singly linked lists
 - free_listint() - Free the memory used my a linked list
 
 
+- free_listint2() - Free a linked list
+
+

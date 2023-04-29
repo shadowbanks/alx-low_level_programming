@@ -34,3 +34,6 @@ More Singly linked lists
 - sum_listint() - Sum all the integer data in a linked list cotaining integer
 
 
+- insert_nodeint_at_index() - Insert a new node at a specific index of a linked list
+
+

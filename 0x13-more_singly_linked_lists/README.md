@@ -25,3 +25,6 @@ More Singly linked lists
 - free_listint2() - Free a linked list
 
 
+- pop_listint() - delete the was node of a linked list
+
+

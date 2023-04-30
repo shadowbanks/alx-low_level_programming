@@ -40,3 +40,6 @@ More Singly linked lists
 - delete_nodeint_at_index() - Delete node a specific index of a linked list
 
 
+- reverse_listint() - Reverse a linked list
+
+

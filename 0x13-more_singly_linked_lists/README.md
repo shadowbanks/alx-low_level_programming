@@ -37,3 +37,6 @@ More Singly linked lists
 - insert_nodeint_at_index() - Insert a new node at a specific index of a linked list
 
 
+- delete_nodeint_at_index() - Delete node a specific index of a linked list
+
+

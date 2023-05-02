@@ -43,3 +43,6 @@ More Singly linked lists
 - reverse_listint() - Reverse a linked list
 
 
+- print_listint_safe() - Print the address and value of a linked, while checking if a loop exist
+
+

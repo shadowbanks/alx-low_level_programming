@@ -10,7 +10,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *node, *prev;
-	int cond = head < head->next ? 1 : 0;
+	int cond = (head->next > head) ? 1 : 0;
 	size_t count = 0;
 
 	if (head != NULL)

@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 	uintptr_t addr = (uintptr_t)head;
 
 	if (head == NULL)
-		exit(98);
+		return (count);
 	cond = head < head->next ? 1 : 0;
 	node = head;
 	temp = head->next;
@@ -25,7 +25,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		if (cond == 1)
 		{
-			if ((uintptr_t)node->next < addr)
+			if ((uintptr_t)node->next <= addr)
 			{
 				printf("-> [%p] %d\n", (void *)temp, temp->n);
 				return (count);
@@ -33,7 +33,7 @@ size_t print_listint_safe(const listint_t *head)
 		}
 		else
 		{
-			if ((uintptr_t)node->next > addr)
+			if ((uintptr_t)node->next >= addr)
 			{
 				printf("-> [%p] %d\n", (void *)temp, temp->n);
 				return (count);

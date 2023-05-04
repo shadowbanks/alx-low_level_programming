@@ -9,27 +9,26 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	nextPtr slow = NULL, fast = NULL;
+	nextPtr node = NULL;
+	int cond = head < head->next ? 1 : 0;
 
-	slow = fast = head;
-	while (fast != NULL && fast->next != NULL)
+	node = head;
+	while (node != NULL)
 	{
-		slow = slow->next;
-		fast = fast->next->next;
-
-		if (slow == fast)
+		if (cond == 1)
 		{
-			slow = head;
-
-			while (slow != NULL)
-			{
-				slow = slow->next;
-				fast = fast->next;
-
-				if (slow == fast)
-					return (slow);
-			}
+			if (node->next <= node)
+				return (node);
 		}
+		else
+		{
+			if (node->next >= node)
+				return (node);
+		}
+		if (node->next == NULL)
+			break;
+		node = node->next;
+
 	}
 	return (NULL);
 }

@@ -13,18 +13,20 @@ size_t free_listint_safe(listint_t **h)
 	nextPtr node = NULL, prev = NULL;
 	int cond = *h < (*h)->next ? 1 : 0;
 
-	if (*h != NULL)
+	if (*h != NULL && h != NULL)
 	{
 		node = *h;
 
 		while (node != NULL)
 		{
+			count++;
 			prev = node;
 			if (cond == 1)
 			{
 				if (node->next <= node)
 				{
-					h = NULL;
+					free(prev);
+					*h = NULL;
 					return (count);
 				}
 			}
@@ -32,15 +34,15 @@ size_t free_listint_safe(listint_t **h)
 			{
 				if (node->next >= node)
 				{
-					h = NULL;
+					free(prev);
+					*h = NULL;
 					return (count);
 				}
 			}
-			count++;
 			node = node->next;
 			free(prev);
 		}
 	}
-	h = NULL;
+	*h = NULL;
 	return (count);
 }

@@ -1,6 +1,6 @@
 #include "main.h"
 
-void binary(unsigned int);
+void binary(unsigned long);
 /**
  * print_binary - Print the binary convertion of a decimal
  * @n: decimal number
@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
  * binary - print binary
  * @n: number
  */
-void binary(unsigned int n)
+void binary(unsigned long n)
 {
 	int bit;
 

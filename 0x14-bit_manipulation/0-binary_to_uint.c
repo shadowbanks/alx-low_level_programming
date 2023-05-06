@@ -8,11 +8,13 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	char *bin = strdup(b);
+	char *bin;
 	unsigned int i = 0, sum = 0;
 
 	if (b == NULL)
 		return (0);
+	bin = strdup(b);
+
 	rev_string(bin);
 
 	while (bin[i] != '\0')

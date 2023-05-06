@@ -13,3 +13,6 @@ Bit manipulation
 - print_binary() - Print the binary conversion of a decimal number
 
 
+- get_bit() - Get's the bit at a certain index of a number
+
+

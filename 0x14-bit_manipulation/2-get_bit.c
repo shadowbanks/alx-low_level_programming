@@ -24,6 +24,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (strlen(bits) >= index)
 		return ((bits[index]) - '0');
+
 	return (-1);
 }
 
@@ -36,13 +37,17 @@ int get_bit(unsigned long int n, unsigned int index)
  */
 void binary(char *bits, unsigned int n)
 {
-	int bit;
+	int bit, count = 0;
 
 	while (n != 0)
 	{
+		count++;
 		bit = n & 01;
 		n = n >> 1;
 		*bits++ = bit + '0';
 	}
+
+	while (count++ < 24)
+		*bits++ = '0';
 	*bits = '\0';
 }

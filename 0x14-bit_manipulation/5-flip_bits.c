@@ -1,6 +1,6 @@
 #include "main.h"
 
-void binary(char *, unsigned int);
+void binary(char *, unsigned long int);
 
 /**
  * flip_bits - Count the amount to bits that need to be flipped
@@ -18,13 +18,13 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	num = n ^ m;
 
-	bits = malloc(25);
+	bits = malloc(sizeof(unsigned long int) * 8 + 1);
 	if (bits == NULL)
 		return (-1);
 
 	binary(bits, num);
 
-	while(bits[i] != '\0')
+	while (bits[i] != '\0')
 	{
 		if (bits[i] == '1')
 			count++;
@@ -41,7 +41,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
  *
  * Return: Nothing
  */
-void binary(char *bits, unsigned int n)
+void binary(char *bits, unsigned long int n)
 {
 	int bit, count = 0;
 
@@ -53,7 +53,7 @@ void binary(char *bits, unsigned int n)
 		*bits++ = bit + '0';
 	}
 
-	while (count++ < 24)
+	while (count++ < 33)
 		*bits++ = '0';
 	*bits = '\0';
 }

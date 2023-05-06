@@ -22,3 +22,6 @@ Bit manipulation
 - clear_bit() - Sets the value of a bit to 0 at given index
 
 
+- flip_bits() - Find the amount of bits needed to be flipped to change a to another number
+
+

@@ -8,5 +8,6 @@ int _putchar(char);
 unsigned int binary_to_uint(const char *b);
 void rev_string(char *s);
 int _strlen(char *s);
+void print_binary(unsigned long int n);
 
 #endif

@@ -19,3 +19,6 @@ Bit manipulation
 - set_bit() - Sets the value of a bit to (1) at given index
 
 
+- clear_bit() - Sets the value of a bit to 0 at given index
+
+

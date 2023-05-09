@@ -13,3 +13,6 @@ C - FILE I/O
 - create_file() - Creates a file and write into said file, truncate if file already exists
 
 
+- append_text_to_file() - Append to an existing file
+
+

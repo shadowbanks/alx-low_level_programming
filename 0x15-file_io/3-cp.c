@@ -40,6 +40,7 @@ int main(int ac, char **av)
 	}
 	close_file(fd);
 	close_file(fd1);
+	free(buff);
 
 	return (0);
 }
@@ -47,6 +48,7 @@ int main(int ac, char **av)
 /**
  * print_err - Print error message
  * @opt: determines which error to print
+ * @file_name: file name
  *
  * Return: nothing
  */

@@ -16,3 +16,6 @@
 	 * get_dnodeint - Retrive a particular node in a doubly linked list
 
 
+	 * sum_dlistint - Sum all the data of a doubly linked list
+
+

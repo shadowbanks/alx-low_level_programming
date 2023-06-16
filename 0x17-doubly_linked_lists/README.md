@@ -19,3 +19,6 @@
 	 * sum_dlistint - Sum all the data of a doubly linked list
 
 
+	 * insert_dnodeint_at_index - Insert new node a specific index
+
+

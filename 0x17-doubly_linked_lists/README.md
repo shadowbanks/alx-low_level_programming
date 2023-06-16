@@ -22,3 +22,6 @@
 	 * insert_dnodeint_at_index - Insert new node a specific index
 
 
+	 * delete_dnodeint_at_index - Delete node at specific index
+
+

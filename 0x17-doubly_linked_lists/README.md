@@ -10,3 +10,6 @@
 	 * add_dnodeint_end - Add a new node at the end of a doubly linked list
 
 
+	 * free_dlistint - Free a doubly linked list
+
+

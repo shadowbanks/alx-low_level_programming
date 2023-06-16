@@ -1,3 +1,8 @@
+0x17. C - Doubly linked lists
+
+-----------------------------------------------------------------------
+
+
 	 * print_dlistint - Print every element of a doubly linked list
 
 

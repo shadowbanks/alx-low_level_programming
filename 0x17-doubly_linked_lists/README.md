@@ -7,3 +7,6 @@
 	 * add_dnodeint - Add a new node to the beginning of a doubly linked list
 
 
+	 * add_dnodeint_end - Add a new node at the end of a doubly linked list
+
+

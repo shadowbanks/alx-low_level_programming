@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -fPIC -Wall *.c -shared -o libdynamic.so
-chmod +x libdynamic.so
+gcc -fPIC -Wall *.c -shared -o liball.so
+chmod +x liball.so

@@ -11,54 +11,44 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
-	hash_node_t *item = NULL, **array = NULL, *temp = NULL;
+	hash_node_t *item = NULL;
 
-	if (!ht)
+	if (!ht || !key || !value || strlen(key) == 0)
 		return (0);
 
-	array = ht->array;
-
-	array = calloc(ht->size, sizeof(hash_node_t *));
-
-	if (!array)
-		return (0);
-
-	item = get_item(key, value);
+	item = make_item(key, value);
 	if (!item)
-
 		return (0);
 
-	index = key_index((unsigned char *)item->key, ht->size);
-	printf("%ld\n", index);
+	index = key_index((unsigned char *)key, ht->size);
+	/*printf("INDEX SETTING %lu\n", index);*/
 
-	temp = array[index];
-
-	array[index] = item;
-
-	if (temp == NULL)
+	if ((ht->array)[index] == NULL)
+	{
+		(ht->array)[index] = item;
 		return (1);
+	}
 
-	item->next = temp;
+	item->next = (ht->array)[index];
+	(ht->array)[index] = item;
+
 	return (1);
 }
 
 /**
- * get_item - Create an item to be saved
+ * make_item - Create an item to be saved
  * @key: Key
  * @value: Key's value
  *
  * Return: pointer to new item
  */
-hash_node_t *get_item(const char *key, const char *value)
+hash_node_t *make_item(const char *key, const char *value)
 {
 	hash_node_t *item = NULL;
 	char *key_m = NULL, *value_m = NULL;
 
-	key_m = malloc(sizeof(char *) * strlen(key) + 1);
-	value_m = malloc(sizeof(char *) * strlen(value) + 1);
-	if (key == NULL || strcmp(key, "") == 0)
-		return (NULL);
-
+	key_m = strdup(key);
+	value_m = strdup(value);
 	if (!key_m)
 		return (NULL);
 	if (!value_m)
@@ -75,8 +65,8 @@ hash_node_t *get_item(const char *key, const char *value)
 		return (NULL);
 	}
 
-	item->key = strcpy(key_m, key);
-	item->value = strcpy(value_m, value);
+	item->key = key_m;
+	item->value = value_m;
 	item->next = NULL;
 
 	return (item);

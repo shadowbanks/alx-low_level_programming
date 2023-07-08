@@ -18,7 +18,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	item = make_item(key, value);
 	if (!item)
+	{
 		return (0);
+	}
 
 	index = key_index((unsigned char *)key, ht->size);
 	/*printf("INDEX SETTING %lu\n", index);*/

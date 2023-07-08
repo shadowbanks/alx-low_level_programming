@@ -29,6 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((unsigned char *)item->key, ht->size);
+	printf("%ld\n", index);
 
 	temp = array[index];
 

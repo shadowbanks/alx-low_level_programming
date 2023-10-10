@@ -1,7 +1,10 @@
 #include "search_algos.h"
 
 /**
- *
+ * print_arr - print every element of an array
+ * @array: pointer to the array
+ * @start: index the items should start printing from
+ * @end: index the items should stop printing
  */
 
 void print_arr(int *array, int start, int end)
@@ -16,6 +19,14 @@ void print_arr(int *array, int start, int end)
 	printf("\n");
 }
 
+/**
+ * binary_search - Search for an item in an array using binary search
+ * @array: pointer to the array
+ * @size: size of the the array
+ * @value: the search item
+ *
+ * Return: found index or (-1)
+ */
 int binary_search(int *array, size_t size, int value)
 {
 	int start = 0, end = 0, mid = 0;

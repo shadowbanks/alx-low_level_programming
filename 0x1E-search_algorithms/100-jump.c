@@ -47,7 +47,10 @@ int jump_search(int *array, size_t size, int value)
 			return (lin_search(array, i - jump, i, value));
 		}
 	}
-	printf("Value found between indexes [%ld] and [%ld]\n", i - jump, i);
-	lin_search(array, i - jump, size - 1, value);
+	if (array != NULL)
+	{
+		printf("Value found between indexes [%ld] and [%ld]\n", i - jump, i);
+		lin_search(array, i - jump, size - 1, value);
+	}
 	return (-1);
 }
